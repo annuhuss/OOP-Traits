@@ -80,22 +80,22 @@ class FlightBooking
 	
 	public static function setFlight($name, $weight = [], $cost = [])
 	{
-		static::$airline = $name;
-		static::$weight = $weight;
-		static::$cost = $cost;
+		self::$airline = $name;
+		self::$weight = $weight;
+		self::$cost = $cost;
 	}
 
 	public static function confirmFlight($c)
 	{
 		$class = strtolower($c);
-		$c::airline(static::$airline) .'<br>';
+		$c::airline(self::$airline) .'<br>';
 		echo 'Class: '. strtoupper($c) .'<br>';
 		$c::serviceXYZ();
 		$c::seat();
       		$c::food();
-		$c::luggageWeight(static::$weight[$class]);
+		$c::luggageWeight(self::$weight[$class]);
 		echo '------------------------------------------------<br>';
-		$c::ticketFare(static::$cost[$class]);
+		$c::ticketFare(self::$cost[$class]);
 	} 
 }
 
