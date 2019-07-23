@@ -20,7 +20,7 @@ Traits in PHP offer a lot of functionalities like classes, but only some of them
 </p>
 
 <p>
-Basically, the structure of a Trait is very similar to that of a class. In the examples below, we have defined FlightServices and FlightInfo as Traits, which contain both non-abstract and abstract methods. Now, from the audience, somebody may ask the question: what is an abstract method? A method that does not obtain any implementation, more specifically, which does not belong a body, is defined as abstract method. Additionally, these abstract methods must be implemented by the extending Traits and classes. As it can be seen by the following examples, wherein both sit() and food() abstract methods have been implemented by the Economic and Business classes.
+Basically, the structure of a Trait is very similar to that of a class. In the examples below, we have defined FlightServices and FlightInfo as Traits, which contain both non-abstract and abstract methods. Now, from the audience, somebody may ask the question: what is an abstract method? A method that does not obtain any implementation, more specifically, which does not obtain a body, is defined as abstract method. Additionally, these abstract methods must be implemented by the extending Traits and classes. As it can be seen by the following examples, wherein both sit() and food() abstract methods have been implemented by the Economic and Business classes.
 </p>
 
 <p>
