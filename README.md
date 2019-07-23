@@ -5,7 +5,11 @@ Traits In PHP
 <p>
 According to the PHP documentation, <strong>Traits</strong> are a mechanism for code reuse in single inheritance languages such as PHP. Purposely,Traits are introduced in PHP language to resolve the limitation of single inheritance and to give a flavor of multiple inheritance. Unlike other OOP languages, PHP does not support the concept of multiple inheritance. To be precise, in PHP a child class can not be derived from more than one parent classes. Consequently, Traits are the strategy for playing an important role in PHP to get rid of the situation. Basically, a Trait can be defined by the use of <strong>trait</strong> keyword and it can be inserted within a class by the use of <strong>use</strong> keyword. Nevertheless, Traits can not be instantiated by their own during their life time. Last but not least, Traits can define both properties and methods, but they can not define constants.
 </p>
-  
+
+<p>
+By the way, I have written a fruitful article on Interfaces, Traits and Abstract Classes, wherein Traits are combined by other PHP’s OOP features. The article can be reached by this <a href="https://medium.com/@annuhuss/some-of-the-phps-object-model-features-interfaces-traits-and-abstract-classes-f98c4509592b/"><i>Link</i></a>. Additionally, PHP’s documentation on Traits can also be found by this <a href="https://www.php.net/manual/en/language.oop5.traits.php/"><i>Link</i></a>.
+</p>
+	
 <p>
 Traits in PHP offer a lot of functionalities like classes, but only some of them I have utilized here to make the examples as simple as purposive. Although I have introduced two examples, but the 2nd one is only a static-version of the 1st, which is a bit shorter one. Nevertheless, both the examples will perform for getting flight-booking tickets. The examples are shown below:
   
