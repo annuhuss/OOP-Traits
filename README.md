@@ -7,7 +7,7 @@ According to the PHP documentation, <strong>Traits</strong> are a mechanism for 
 </p>
 
 <p>
-By the way, I have written a fruitful article on Interfaces, Traits and Abstract Classes, wherein Traits are combined by other PHP’s OOP features. The article can be reached by this <a href="https://medium.com/@annuhuss/some-of-the-phps-object-model-features-interfaces-traits-and-abstract-classes-f98c4509592b/"><i>Link</i></a>. Additionally, PHP’s documentation on Traits can also be found by this <a href="https://www.php.net/manual/en/language.oop5.traits.php/"><i>Link</i></a>.
+By the way, I have written a fruitful article on Interfaces, Traits and Abstract Classes, wherein Traits are combined by other PHPs OOP features. The article can be reached by this <a href="https://medium.com/@annuhuss/some-of-the-phps-object-model-features-interfaces-traits-and-abstract-classes-f98c4509592b/"><i>Link</i></a>. Additionally, PHPs documentation on Traits can also be found by this <a href="https://www.php.net/manual/en/language.oop5.traits.php/"><i>Link</i></a>.
 </p>
 	
 <p>
@@ -20,11 +20,13 @@ Traits in PHP offer a lot of functionalities like classes, but only some of them
 </p>
 
 <p>
-Basically, the structure of a Trait is very similar to that of a class. In the examples below, we have defined FlightServices and FlightInfo as Traits, which contain both non-abstract and abstract methods. Now, from the audience, somebody may ask the question: what is an abstract method? A method that does not obtain any implementation, more specifically, which does not obtain a body, is defined as abstract method. Additionally, these abstract methods must be implemented by the extending Traits and classes. As it can be seen by the following examples, wherein both sit() and food() abstract methods have been implemented by the Economic and Business classes.
+Basically, the structure of a Trait is very similar to that of a class. In the examples below, we have defined FlightServices and FlightInfo as Traits, which contain both non-abstract and abstract methods. Now, from the audience, somebody may ask the question: what is an abstract method? A method that does not obtain any implementation, more specifically, a method that does not hold a body, is defined as abstract method. Additionally, these abstract methods must be implemented by the extending Traits and classes. As it can be seen by the following examples, wherein both sit() and food() abstract methods have been implemented by the Economic and Business classes.
 </p>
 
 <p>
+<i>
 What is the important point in the examples to mention about Traits is that, FlightServices and FlightInfo Traits contain different methods to execute flight bookings for Economic and Business classes. If FlightServices and FlightInfo were classes instead Traits, either the Economic or the Business class would not be able to extend the both (“classes”) simultaneously, since PHP does not support multiple inheritance, where some other OOP languages do. Surprisingly, PHP does allow a class to hold more than one Trait at once, that somewhat reduces the lack of multiple inheritance.
+</i>
 </p>
 
 <p>
@@ -32,6 +34,8 @@ In the following code, by the support of FlightBooking object, initially we can 
 </p>
 
 ```php
+//......
+
 class FlightBooking
 {    
 	//.....
